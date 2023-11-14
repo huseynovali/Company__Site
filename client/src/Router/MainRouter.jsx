@@ -1,11 +1,14 @@
 import { useRoutes } from "react-router";
 import AuthRoutes from "./AuthRoutes";
 import PrivateRoutes from "./PriovateRoutes";
+import MainLayout from "../layout/MainLayout";
+import Login from "../page/Login";
+import Profile from "../page/Profile";
 
 function MainRoutes() {
   const Routes = useRoutes([
     {
-      element: <p>Layout</p>,
+      element: <MainLayout/>,
       path: "/",
     },
     {
@@ -13,7 +16,7 @@ function MainRoutes() {
       children: [
         {
           path: "/login",
-          element: <p>Login</p>,
+          element: <Login/>,
         },
       ],
     },
@@ -22,7 +25,7 @@ function MainRoutes() {
       children: [
         {
           path: "/profile",
-          element: <p>Profile</p>,
+          element: <Profile/>,
         },
       ],
     },
