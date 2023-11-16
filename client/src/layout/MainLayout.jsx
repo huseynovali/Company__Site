@@ -1,13 +1,14 @@
-import React from 'react'
-import { Outlet } from 'react-router'
+import React from "react";
+import { Outlet } from "react-router";
+import Container from "../components/Container";
 
 function MainLayout() {
   return (
-    <div>
-        Layout
-        <Outlet/>
-    </div>
-  )
+    <Container>
+      Layout
+      <Outlet />
+    </Container>
+  );
 }
 
-export default MainLayout
+export default MainLayout;
