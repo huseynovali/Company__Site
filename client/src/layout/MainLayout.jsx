@@ -2,14 +2,18 @@ import React from "react";
 import { Outlet } from "react-router";
 import Container from "../components/Container";
 import Navbar from "../components/LayoutComp/Navbar";
+import Footer from "../components/LayoutComp/Footer";
 
 function MainLayout() {
   return (
-    <Container>
-      <Navbar/>
-      Layout
-      <Outlet />
-    </Container>
+    <React.Fragment>
+      <Container>
+        <Navbar />
+        Layout
+        <Outlet />
+      </Container>
+      <Footer />
+    </React.Fragment>
   );
 }
 
