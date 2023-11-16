@@ -31,7 +31,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="contact__address flex py-10  border-y border-y-[#262626] w-full justify-center">
+          <div className="contact__address flex flex-wrap py-10  border-y border-y-[#262626] w-full justify-center">
             <div className="mail flex text-[#E4E4E7] items-center">
               <div>
                 <svg
@@ -78,7 +78,7 @@ function Footer() {
               </span>
             </div>
 
-            <div className="phone flex text-[#E4E4E7] items-center pl-3">
+            <div className="location py-3 lg:py-0 flex text-[#E4E4E7] items-center pl-3">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,8 +100,8 @@ function Footer() {
               </span>
             </div>
           </div>
-          <div className="end mt-10 bg-[#1A1A1A] border border-[#262626] w-full p-3 rounded-[82px] flex items-center justify-between">
-            <div className="social flex">
+          <div className="end mt-10 bg-[#1A1A1A] border border-[#262626] w-full px-3 py-10 lg:p-3 relative rounded-[12px] lg:rounded-[82px] lg:flex-row text-center flex flex-wrap lg:flex-nowrap items-center justify-between">
+            <div className="social flex absolute -top-5 left-[30%] lg:static">
               <div className="face p-3 bg-[#CAFF33] rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,13 +161,24 @@ function Footer() {
                 </svg>
               </div>
             </div>
-            <p className="text-[#B3B3B3] text-sm">
+
+            <p className="text-[#B3B3B3] text-sm hidden lg:block"> 
               YourBank All Rights Reserved
             </p>
-            <div className="text-[#B3B3B3] flex items-center">
+            <div className="text-[#B3B3B3]  items-center pt-5 lg:pt-0 hidden lg:flex">
               <p>Privacy Policy</p>
               <span className="block px-1">|</span>
               <p>Terms of Service</p>
+            </div>
+            <div className="w-full flex flex-col items-center lg:hidden">
+              <p className="text-[#B3B3B3] text-sm">
+                YourBank All Rights Reserved
+              </p>
+              <div className="text-[#B3B3B3] flex items-center pt-5 lg:pt-0">
+                <p>Privacy Policy</p>
+                <span className="block px-1">|</span>
+                <p>Terms of Service</p>
+              </div>
             </div>
           </div>
         </div>
