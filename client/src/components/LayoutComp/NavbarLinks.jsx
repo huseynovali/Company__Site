@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NavbarLinks() {
   const url = useLocation();
   return (
-    <div className="nav__links">
+    <div className="nav__links hidden lg:block">
       <ul className="flex">
         <li
           className={`  text-white rounded-[82px] ${
