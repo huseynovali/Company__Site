@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
+import NavbarLinks from "./NavbarLinks";
 
 function Navbar() {
   return (
@@ -8,24 +9,7 @@ function Navbar() {
       <Link to={"/"} className="logo ">
         <img src={logo} alt="logo" />
       </Link>
-      <div className="nav__links">
-        <ul className="flex">
-          <li className="  text-white rounded-[82px] hover:bg-[#262626]">
-            <Link className="text-sm py-[10px] px-4 block" to={"/"}>
-              Home
-            </Link>
-          </li>
-          <li className=" text-white rounded-[82px] hover:bg-[#262626]">
-            <Link className="text-sm py-[10px] px-4 block">Careers</Link>
-          </li>
-          <li className=" text-white rounded-[82px] hover:bg-[#262626]">
-            <Link className="text-sm py-[10px] px-4 block">About</Link>
-          </li>
-          <li className=" text-white rounded-[82px] hover:bg-[#262626]">
-            <Link className="text-sm py-[10px] px-4 block">Security</Link>
-          </li>
-        </ul>
-      </div>
+      <NavbarLinks />
 
       <div className="auth__button">
         <button className="mr-5 text-white">Sign Up</button>
