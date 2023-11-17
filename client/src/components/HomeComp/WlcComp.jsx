@@ -2,7 +2,7 @@ import React from "react";
 
 function WlcComp() {
   return (
-    <div className="py-[60px] ">
+    <div className="py-[60px] flex">
       <div className="left lg:w-1/2 text-center lg:text-left">
         <div className="p-2 bg-[#262626] rounded-[61px] w-[254px] flex items-center justify-between mb-6 mx-auto lg:mx-0">
           <div>
@@ -35,9 +35,114 @@ function WlcComp() {
           goals. We are committed to delivering personalized and innovative
           services that prioritize our customers' needs.
         </p>
-        <button className="px-6 py-3 bg-[#CAFF33] rounded-[82px] mt-10">Open Account</button>
+        <button className="px-6 py-3 bg-[#CAFF33] rounded-[82px] mt-10">
+          Open Account
+        </button>
       </div>
-      <div className="right"></div>
+      <div className="right">
+        <div className="transactions__container p-7 rounded-lg border border-[#262626] relative">
+          <div className="flex items-center bg-[#22251B] rounded-lg p-3 absolute -top-7 -left-10">
+            <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="18"
+                viewBox="0 0 17 18"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.41518 4.38867C8.70122 4.38867 8.9331 4.61928 8.9331 4.90375V8.50926H12.5585C12.8446 8.50926 13.0765 8.73986 13.0765 9.02433C13.0765 9.3088 12.8446 9.5394 12.5585 9.5394H8.9331V13.1449C8.9331 13.4294 8.70122 13.66 8.41518 13.66C8.12914 13.66 7.89726 13.4294 7.89726 13.1449V9.5394H4.27183C3.98579 9.5394 3.75391 9.3088 3.75391 9.02433C3.75391 8.73986 3.98579 8.50926 4.27183 8.50926H7.89726V4.90375C7.89726 4.61928 8.12914 4.38867 8.41518 4.38867Z"
+                  fill="#1A1A1A"
+                />
+              </svg>
+            </div>
+            <div className="pl-2 text-white">
+              <p className="text-xs">+ $5000,00</p>
+              <p className="text-[#E4E4E7] text-[11px]">Monthly Income</p>
+            </div>
+          </div>
+          <p className="text-white">Your Transactions</p>
+
+          <div>
+            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[355px]  mt-3 relative z-10">
+              <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="17"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.7072 1.94287C11.4737 2.19302 11.4882 2.5841 11.7398 2.81638L13.4803 4.42374L6.36197 4.42374C6.01872 4.42374 5.74047 4.70047 5.74047 5.04183C5.74047 5.38319 6.01872 5.65992 6.36197 5.65992L13.4803 5.65992L11.7398 7.26728C11.4882 7.49956 11.4737 7.89064 11.7072 8.14079C11.9408 8.39094 12.334 8.40542 12.5856 8.17314L15.4859 5.49476C15.6126 5.37781 15.6845 5.2137 15.6845 5.04183C15.6845 4.86996 15.6126 4.70585 15.4859 4.5889L12.5856 1.91052C12.334 1.67824 11.9408 1.69273 11.7072 1.94287ZM6.40307 8.53581C6.1695 8.28566 5.77626 8.27118 5.52473 8.50346L2.62438 11.1818C2.49774 11.2988 2.42578 11.4629 2.42578 11.6348C2.42578 11.8066 2.49774 11.9707 2.62438 12.0877L5.52473 14.7661C5.77626 14.9984 6.1695 14.9839 6.40307 14.7337C6.63663 14.4836 6.62207 14.0925 6.37054 13.8602L4.62997 12.2529H11.7483C12.0916 12.2529 12.3698 11.9761 12.3698 11.6348C12.3698 11.2934 12.0916 11.0167 11.7483 11.0167H4.62997L6.37054 9.40932C6.62207 9.17704 6.63663 8.78596 6.40307 8.53581Z"
+                    fill="#1C1C1C"
+                  />
+                </svg>
+              </div>
+              <div className="pl-2 text-white">
+                <p className="text-xs">Transaction</p>
+                <p className=" text-sm">
+                  Joel Kenley <span className="text-base">-$68.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[327px] relative -top-7 mx-auto mt-3 opacity-70">
+              <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="17"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.7072 1.94287C11.4737 2.19302 11.4882 2.5841 11.7398 2.81638L13.4803 4.42374L6.36197 4.42374C6.01872 4.42374 5.74047 4.70047 5.74047 5.04183C5.74047 5.38319 6.01872 5.65992 6.36197 5.65992L13.4803 5.65992L11.7398 7.26728C11.4882 7.49956 11.4737 7.89064 11.7072 8.14079C11.9408 8.39094 12.334 8.40542 12.5856 8.17314L15.4859 5.49476C15.6126 5.37781 15.6845 5.2137 15.6845 5.04183C15.6845 4.86996 15.6126 4.70585 15.4859 4.5889L12.5856 1.91052C12.334 1.67824 11.9408 1.69273 11.7072 1.94287ZM6.40307 8.53581C6.1695 8.28566 5.77626 8.27118 5.52473 8.50346L2.62438 11.1818C2.49774 11.2988 2.42578 11.4629 2.42578 11.6348C2.42578 11.8066 2.49774 11.9707 2.62438 12.0877L5.52473 14.7661C5.77626 14.9984 6.1695 14.9839 6.40307 14.7337C6.63663 14.4836 6.62207 14.0925 6.37054 13.8602L4.62997 12.2529H11.7483C12.0916 12.2529 12.3698 11.9761 12.3698 11.6348C12.3698 11.2934 12.0916 11.0167 11.7483 11.0167H4.62997L6.37054 9.40932C6.62207 9.17704 6.63663 8.78596 6.40307 8.53581Z"
+                    fill="#1C1C1C"
+                  />
+                </svg>
+              </div>
+              <div className="pl-2 text-white">
+                <p className="text-xs">Transaction</p>
+                <p className=" text-sm">
+                Mark Smith <span className="text-base">-$68.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[300px] relative -top-14 mx-auto mt-3 opacity-40">
+              <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="17"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.7072 1.94287C11.4737 2.19302 11.4882 2.5841 11.7398 2.81638L13.4803 4.42374L6.36197 4.42374C6.01872 4.42374 5.74047 4.70047 5.74047 5.04183C5.74047 5.38319 6.01872 5.65992 6.36197 5.65992L13.4803 5.65992L11.7398 7.26728C11.4882 7.49956 11.4737 7.89064 11.7072 8.14079C11.9408 8.39094 12.334 8.40542 12.5856 8.17314L15.4859 5.49476C15.6126 5.37781 15.6845 5.2137 15.6845 5.04183C15.6845 4.86996 15.6126 4.70585 15.4859 4.5889L12.5856 1.91052C12.334 1.67824 11.9408 1.69273 11.7072 1.94287ZM6.40307 8.53581C6.1695 8.28566 5.77626 8.27118 5.52473 8.50346L2.62438 11.1818C2.49774 11.2988 2.42578 11.4629 2.42578 11.6348C2.42578 11.8066 2.49774 11.9707 2.62438 12.0877L5.52473 14.7661C5.77626 14.9984 6.1695 14.9839 6.40307 14.7337C6.63663 14.4836 6.62207 14.0925 6.37054 13.8602L4.62997 12.2529H11.7483C12.0916 12.2529 12.3698 11.9761 12.3698 11.6348C12.3698 11.2934 12.0916 11.0167 11.7483 11.0167H4.62997L6.37054 9.40932C6.62207 9.17704 6.63663 8.78596 6.40307 8.53581Z"
+                    fill="#1C1C1C"
+                  />
+                </svg>
+              </div>
+              <div className="pl-2 text-white">
+                <p className="text-xs">Transaction</p>
+                <p className=" text-sm">
+                Lenen Roy <span className="text-base">-$68.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
