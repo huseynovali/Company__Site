@@ -118,14 +118,14 @@ function OurProduct() {
   });
   return (
     <div className="py-14">
-      <p className="text-[38px] text-white">
+      <p className="text-[38px] text-white text-center lg:text-left">
         Our <span className="text-[#CAFF33]">Products</span>
       </p>
 
       <Tab.Group>
-        <div className="flex">
+        <div className="lg:flex">
           <div>
-            <p className="text-base text-[#B3B3B3] w-[75%] pt-3">
+            <p className="text-sm lg:text-base text-[#B3B3B3] lg:w-[75%] pt-3 text-center lg:text-left mb-5 lg:mb-0">
               Discover a range of comprehensive and customizable banking
               products at YourBank, designed to suit your unique financial needs
               and aspirations
@@ -152,12 +152,12 @@ function OurProduct() {
         <Tab.Panels className="mt-20">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className={""}>
-              <ul className="flex">
+              <ul className="lg:flex">
                 {posts.map((post, index) => (
                   <li
                     key={post.id}
                     className={classNames(
-                      "relative rounded-md px-10 flex flex-col items-center text-center ",
+                      "relative rounded-md px-10 flex flex-col items-center text-center my-5 lg:my-0",
 
                       index % 2 !== 0 ? "border-x border-[#262626]" : ""
                     )}
