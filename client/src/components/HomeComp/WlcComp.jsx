@@ -3,8 +3,8 @@ import React from "react";
 function WlcComp() {
   return (
     <div className="py-[60px] ">
-      <div className="left w-1/2">
-        <div className="p-2 bg-[#262626] rounded-[61px] w-[254px] flex items-center justify-between mb-6">
+      <div className="left lg:w-1/2 text-center lg:text-left">
+        <div className="p-2 bg-[#262626] rounded-[61px] w-[254px] flex items-center justify-between mb-6 mx-auto lg:mx-0">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,17 @@ function WlcComp() {
             No LLC Required, No Credit Check.
           </p>
         </div>
-        <p className="text-[38px] text-white pr-9">Welcome to YourBank Empowering Your <span className="text-[#CAFF33]">Financial Journey</span> </p>
+        <p className="text-[28px] lg:text-[38px] text-white lg:pr-9">
+          Welcome to YourBank Empowering Your{" "}
+          <span className="text-[#CAFF33]">Financial Journey</span>{" "}
+        </p>
+        <p className="text-[16px] text-[#E4E4E7] lg:pr-10">
+          At YourBank, our mission is to provide comprehensive banking solutions
+          that empower individuals and businesses to achieve their financial
+          goals. We are committed to delivering personalized and innovative
+          services that prioritize our customers' needs.
+        </p>
+        <button className="px-6 py-3 bg-[#CAFF33] rounded-[82px] mt-10">Open Account</button>
       </div>
       <div className="right"></div>
     </div>
