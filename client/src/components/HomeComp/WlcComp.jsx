@@ -1,6 +1,14 @@
-import React from "react";
-
+import React, { useState } from "react";
+import AzeFlag from "../../assets/AZE.jpg";
+import AbdFlag from "../../assets/Abd.svg";
 function WlcComp() {
+  const [AzeInput, setAzeInput] = useState(100);
+  const [UsdInput, setUsdInput] = useState(Math.floor(AzeInput / 1.7));
+
+  const convert = () => {
+    setUsdInput(Math.floor(AzeInput / 1.7));
+  };
+
   return (
     <div className="py-[60px] flex">
       <div className="left lg:w-1/2 text-center lg:text-left">
@@ -65,6 +73,7 @@ function WlcComp() {
           </div>
           <p className="text-white">Your Transactions</p>
 
+          {/*  */}
           <div>
             <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[355px]  mt-3 relative z-10">
               <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
@@ -111,7 +120,7 @@ function WlcComp() {
               <div className="pl-2 text-white">
                 <p className="text-xs">Transaction</p>
                 <p className=" text-sm">
-                Mark Smith <span className="text-base">-$68.00</span>
+                  Mark Smith <span className="text-base">-$68.00</span>
                 </p>
               </div>
             </div>
@@ -136,11 +145,60 @@ function WlcComp() {
               <div className="pl-2 text-white">
                 <p className="text-xs">Transaction</p>
                 <p className=" text-sm">
-                Lenen Roy <span className="text-base">-$68.00</span>
+                  Lenen Roy <span className="text-base">-$68.00</span>
                 </p>
               </div>
             </div>
           </div>
+
+          <p className="py-5 text-white text-sm">Money Exchange</p>
+
+          <div className="money__convertor__container border border-[#262626] rounded-lg">
+            <div className="flex">
+              <div className="aze p-3 w-1/2 border-r-[#262626] border-r-[0.5px]">
+                <div className="flex">
+                  <img
+                    src={AzeFlag}
+                    alt="Azerbaijan flag"
+                    className="w-[27px] h-[27px] rounded-full"
+                  />
+                  <span className="pl-2 text-white">AZE</span>
+                </div>
+                <p className="text-[#E4E4E7] pt-2 text-xs">Azerbaijani Manat</p>
+              </div>
+              <div className="USD p-3 w-1/2">
+                <div className="flex">
+                  <img
+                    src={AbdFlag}
+                    alt="Azerbaijan flag"
+                    className="w-[27px] h-[27px] rounded-full"
+                  />
+                  <span className="pl-2 text-white">USD</span>
+                </div>
+                <p className="text-[#E4E4E7] pt-2 text-xs">
+                  United States Dollar
+                </p>
+              </div>
+            </div>
+            <div className="flex border-t-[#262626] border-t-[0.5px] text-white">
+              <div className="px-3 py-5 w-1/2 border-r-[#262626] border-r-[0.5px]">
+                <input
+                  type="text"
+                  value={AzeInput}
+                  onChange={(e) => setAzeInput(e.target.value)}
+                  className="bg-transparent outline-none"
+                />
+              </div>
+              <div className="px-3 py-5 w-1/2">{UsdInput}</div>
+            </div>
+          </div>
+
+          <button
+            className="px-5 py-3 w-full text-[#D1FF4D] bg-[#D1FF4D] bg-opacity-5 mt-5 rounded-[56px]"
+            onClick={() => convert()}
+          >
+            Exchange
+          </button>
         </div>
       </div>
     </div>
