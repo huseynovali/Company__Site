@@ -162,7 +162,7 @@ function Footer() {
               </div>
             </div>
 
-            <p className="text-[#B3B3B3] text-sm hidden lg:block"> 
+            <p className="text-[#B3B3B3] text-sm hidden lg:block">
               YourBank All Rights Reserved
             </p>
             <div className="text-[#B3B3B3]  items-center pt-5 lg:pt-0 hidden lg:flex">

@@ -9,7 +9,6 @@ function MainLayout() {
     <React.Fragment>
       <Container>
         <Navbar />
-        Layout
         <Outlet />
       </Container>
       <Footer />
