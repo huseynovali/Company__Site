@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AzeFlag from "../../assets/AZE.jpg";
 import AbdFlag from "../../assets/Abd.svg";
+import vectors from "../../assets/vectors.svg";
 function WlcComp() {
   const [AzeInput, setAzeInput] = useState(100);
   const [UsdInput, setUsdInput] = useState(Math.floor(AzeInput / 1.7));
@@ -10,7 +11,7 @@ function WlcComp() {
   };
 
   return (
-    <div className="py-[60px] flex">
+    <div className="py-[60px] lg:flex ">
       <div className="left lg:w-1/2 text-center lg:text-left">
         <div className="p-2 bg-[#262626] rounded-[61px] w-[254px] flex items-center justify-between mb-6 mx-auto lg:mx-0">
           <div>
@@ -47,9 +48,12 @@ function WlcComp() {
           Open Account
         </button>
       </div>
-      <div className="right relative w-[45%] pl-14">
-        <div className="transactions__container p-7 rounded-lg border border-[#262626] relative w-[410px]" >
-          <div className="flex items-center bg-[#22251B] rounded-lg p-3 absolute -top-7 -left-10">
+      <div className="right relative lg:w-[45%] lg:pl-14 mt-20 lg:mt-0 ">
+        <div className=" absolute -top-10  -right-3 lg:-right-20">
+          <img src={vectors} alt="" />
+        </div>
+        <div className="transactions__container p-7 rounded-lg border border-[#262626] relative mx-auto w-[90%] lg:w-[410px] z-20">
+          <div className="flex items-center bg-[#22251B] rounded-lg p-3 absolute -top-7 -left-6 lg:-left-10">
             <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +79,7 @@ function WlcComp() {
 
           {/*  */}
           <div>
-            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[355px]  mt-3 relative z-10">
+            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-full  mt-3 relative z-10">
               <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +104,7 @@ function WlcComp() {
               </div>
             </div>
 
-            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[327px] relative -top-7 mx-auto mt-3 opacity-70">
+            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[90%] relative -top-7 mx-auto mt-3 opacity-70">
               <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +129,7 @@ function WlcComp() {
               </div>
             </div>
 
-            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[300px] relative -top-14 mx-auto mt-3 opacity-40">
+            <div className="flex items-center bg-[#1C1C1C] rounded-lg p-3 border border-[#262626] w-[80%] relative -top-14 mx-auto mt-3 opacity-40">
               <div className="p-[6.5px] bg-[#CAFF33] inline-block rounded-full w-[30px] h-[30px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +205,7 @@ function WlcComp() {
           </button>
         </div>
 
-        <div className="Currencys flex p-2 bg-[#CAFF33] bg-opacity-5 mt-5 rounded-[55px] items-center justify-between relative max-w-max left-1/2">
+        <div className="Currencys flex p-2 bg-[#CAFF33] bg-opacity-5 mt-5 rounded-[55px] items-center justify-between relative max-w-max lg:left-1/2">
           <p className="text-white pr-2 text-xs">Supported Currency</p>
           <div className="flex gap-1 p-2 bg-[#1A1A1A] rounded-[37px]">
             <div className="w-[27px] h-[27px] rounded-full bg-[#262626]">
