@@ -86,7 +86,35 @@ function OurProduct() {
          Benefit from features such as online and mobile banking, debit cards, and free ATM access.",
       },
     ],
-    For_Businesses: [],
+    For_Businesses: [
+      {
+        id: 2,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+          >
+            <path
+              d="M3.9375 3.5C2.72938 3.5 1.75 4.47938 1.75 5.6875V6.5625C1.75 7.77062 2.72938 8.75 3.9375 8.75H24.0625C25.2706 8.75 26.25 7.77062 26.25 6.5625V5.6875C26.25 4.47938 25.2706 3.5 24.0625 3.5H3.9375Z"
+              fill="#CAFF33"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60126 10.5L4.23099 21.2055C4.33982 23.0555 5.87179 24.5 7.72495 24.5H20.2747C22.1279 24.5 23.6598 23.0555 23.7687 21.2055L24.3984 10.5H3.60126ZM14 12.25C14.4832 12.25 14.875 12.6418 14.875 13.125V18.8876L16.8813 16.8813C17.223 16.5396 17.777 16.5396 18.1187 16.8813C18.4604 17.223 18.4604 17.777 18.1187 18.1187L14.6187 21.6187C14.277 21.9604 13.723 21.9604 13.3813 21.6187L9.88128 18.1187C9.53957 17.777 9.53957 17.223 9.88128 16.8813C10.223 16.5396 10.777 16.5396 11.1187 16.8813L13.125 18.8876V13.125C13.125 12.6418 13.5168 12.25 14 12.25Z"
+              fill="#CAFF33"
+            />
+          </svg>
+        ),
+
+        title: "Savings Accounts",
+        text: "Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time,\
+         we have the right account for you.",
+      },
+    ],
   });
   return (
     <div className="py-14">
@@ -121,7 +149,7 @@ function OurProduct() {
             ))}
           </Tab.List>
         </div>
-        <Tab.Panels className="mt-2">
+        <Tab.Panels className="mt-20">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className={""}>
               <ul className="flex">
@@ -129,17 +157,21 @@ function OurProduct() {
                   <li
                     key={post.id}
                     className={classNames(
-                      "relative rounded-md p-3 ",
+                      "relative rounded-md px-10 flex flex-col items-center text-center ",
 
-                     index%2!==0 ? 'border-x border-[#262626]':''
+                      index % 2 !== 0 ? "border-x border-[#262626]" : ""
                     )}
                   >
-                    {post.icon}
-                    <h3 className="text-sm font-medium leading-5">
+                    <div className="p-2 rounded-full bg-opacity-5 icon__up">
+                      <div className="p-3 rounded-full  bg-opacity-20 icon__down">
+                        {post.icon}
+                      </div>
+                    </div>
+                    <h3 className=" text-[20px] text-white mt-5">
                       {post.title}
                     </h3>
 
-                    <p>{post.text}</p>
+                    <p className="text-base text-[#B3B3B3] mt-4">{post.text}</p>
                   </li>
                 ))}
               </ul>
